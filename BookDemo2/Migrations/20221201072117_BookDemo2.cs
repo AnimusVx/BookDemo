@@ -2,9 +2,9 @@
 
 #nullable disable
 
-namespace BookDemo.Migrations
+namespace BookDemo2.Migrations
 {
-    public partial class BookDemo : Migration
+    public partial class BookDemo2 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

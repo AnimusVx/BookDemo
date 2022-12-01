@@ -1,7 +1,11 @@
+using BookDemo2.Data.Access;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("MyBackUpConn")));
 
 var app = builder.Build();
 
