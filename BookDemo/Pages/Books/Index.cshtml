@@ -1,0 +1,13 @@
+﻿@page
+@model BookDemo.Pages.Books.IndexModel
+@{
+}
+
+<div>
+    <ul>
+        @foreach(var book in Model.Books)
+        {
+            <li> @book.Id - @book.Title </li>
+        }
+    </ul>
+</div>
